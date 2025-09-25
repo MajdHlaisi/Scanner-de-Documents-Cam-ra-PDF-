@@ -5,18 +5,24 @@ import 'services/activation_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  bool isActivated = await ActivationService.checkActivation();
+  final isActivated = await ActivationService.isActivated();
   runApp(MyApp(isActivated: isActivated));
 }
 
 class MyApp extends StatelessWidget {
   final bool isActivated;
-  MyApp({required this.isActivated});
+  const MyApp({super.key, required this.isActivated});
 
   @override
   Widget build(BuildContext context) {
-     return MaterialApp(
-      home: isActivated ? ScannerPage() : ActivationPage(),
+    return MaterialApp(
+      title: 'Scanner MVP',
+      theme: ThemeData(
+        useMaterial3: true,
+        colorSchemeSeed: Colors.teal,
+      ),
+     home: isActivated ? ScannerPage() : ActivationPage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
