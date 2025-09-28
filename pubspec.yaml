@@ -30,12 +30,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  camera_web: ^0.3.5          # Version plus récente et compatible Flutter 3.x
+  shared_preferences: ^2.2.0
+  camera: ^0.11.0+2         # Version plus récente et compatible Flutter 3.x
+  image_picker: ^1.1.1
   pdf: ^3.11.3                # Version stable compatible Flutter 3.x
+  path_provider: ^2.0.16
   image: ^4.0.17
   flutter_secure_storage: ^9.0.0
   universal_html: ^2.0.6
-  fluttertoast: ^8.2.1
+  fluttertoast: ^9.0.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -50,7 +53,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^5.0.0
+  flutter_lints: ^6.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

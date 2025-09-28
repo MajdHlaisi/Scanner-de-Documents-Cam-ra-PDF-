@@ -1,22 +1,25 @@
-import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class ActivationService {
-  static const _validKey = "MA_CLE_123";
-  static const _storage = FlutterSecureStorage();
+  static const _key = 'isActivated';
+  static const _activationCode = '1234-ABCD'; // Exemple de clé valide
 
-  /// Vérifie si la clé entrée est correcte
-  static bool isKeyValid(String key) {
-    return key == _validKey;
-  }
-
-  /// Sauvegarde la clé dans le stockage sécurisé
-  static Future<void> saveKey(String key) async {
-    await _storage.write(key: 'activation_key', value: key);
-  }
-
-  /// Vérifie si l’app est déjà activée
   static Future<bool> isActivated() async {
-    final key = await _storage.read(key: 'activation_key');
-    return key == _validKey;
+    final prefs = await SharedPreferences.getInstance();
+    return prefs.getBool(_key) ?? false;
+  }
+
+  static Future<bool> activate(String code) async {
+    if (code == _activationCode) {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setBool(_key, true);
+      return true;
+    }
+    return false;
+  }
+
+  static Future<void> resetActivation() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.remove(_key);
   }
 }
