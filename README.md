@@ -5,27 +5,31 @@ Cette application mobile & web a été développée dans le cadre du test techni
 Elle permet de :
 
 Scanner des documents via la caméra (mobile) ou la galerie (web)
-
 Réorganiser et supprimer des pages avant export
-
 Générer un fichier PDF à partir des images sélectionnées
-
 Protéger l’accès à l’application via une clé d’activation obligatoire
 ## 🛠️ Fonctionnalités principales
+
 ✅ Activation par clé (obligatoire, stockée localement avec SharedPreferences)
+
 ✅ Ajout d’images :
 
-Mobile → Caméra
-Web → Galerie
+    Mobile → Caméra
+
+    Web → Galerie
 
 ✅ Miniatures des images importées
+
 ✅ Suppression d’images
+
 ✅ Réorganisation des pages (drag & drop)
+
 ✅ Génération PDF :
 
-Mobile → Sauvegarde locale (dossier temporaire)
-Web → Téléchargement automatique du fichier
+    Mobile → Sauvegarde locale (dossier temporaire)
+    Web → Téléchargement automatique du fichier
 ## 📂 Structure du projet
+
 lib/
 
  ├─ main.dart                # Point d’entrée
