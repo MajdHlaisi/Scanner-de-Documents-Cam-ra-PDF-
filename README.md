@@ -42,7 +42,7 @@ lib/
  
 ## ⚙️ Installation 
 1. Cloner le dépôt
-git clone https://github.com/MajdHlaisi/scanner_mvp.git
+git clone https://github.com/MajdHlaisi/Scanner-de-Documents-Cam-ra-PDF-.git
 cd scanner_mvp
 
 2. Installer les dépendances
