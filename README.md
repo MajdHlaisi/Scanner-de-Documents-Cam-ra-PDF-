@@ -27,11 +27,17 @@ Mobile → Sauvegarde locale (dossier temporaire)
 Web → Téléchargement automatique du fichier
 ## 📂 Structure du projet
 lib/
+
  ├─ main.dart                # Point d’entrée
+ 
  ├─ pages/
+ 
  │   ├─ activation_page.dart # Page d’activation
+ 
  │   └─ scanner_page.dart    # Page principale (scanner + PDF)
+ 
  ├─ services/
+ 
  │   └─ activation_service.dart # Service de gestion d’activation
  
 ## ⚙️ Installation 
