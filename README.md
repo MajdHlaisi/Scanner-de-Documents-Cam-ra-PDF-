@@ -14,9 +14,9 @@ Protéger l’accès à l’application via une clé d’activation obligatoire
 
 ✅ Ajout d’images :
 
-    Mobile → Caméra
+  Mobile → Caméra
 
-    Web → Galerie
+  Web → Galerie
 
 ✅ Miniatures des images importées
 
@@ -26,8 +26,8 @@ Protéger l’accès à l’application via une clé d’activation obligatoire
 
 ✅ Génération PDF :
 
-    Mobile → Sauvegarde locale (dossier temporaire)
-    Web → Téléchargement automatique du fichier
+ Mobile → Sauvegarde locale (dossier temporaire)
+ Web → Téléchargement automatique du fichier
 ## 📂 Structure du projet
 
 lib/
@@ -46,21 +46,27 @@ lib/
  
 ## ⚙️ Installation 
 1. Cloner le dépôt
-git clone https://github.com/MajdHlaisi/Scanner-de-Documents-Cam-ra-PDF-.git
-cd scanner_mvp
+
+        git clone https://github.com/MajdHlaisi/Scanner-de-Documents-Cam-ra-PDF-.git
+        cd scanner_mvp
 
 2. Installer les dépendances
-flutter pub get
+
+       flutter pub get
 
 3. Lancer en debug
 
 Mobile (Android/iOS) :
-flutter run
+                        
+    flutter run
 Web :
-flutter run -d chrome
+
+    flutter run -d chrome
 
 4. Générer un APK (Android)
-flutter build apk --release
+
+        flutter build apk --release
+
 ## 🔑 Activation
 Au premier lancement, l’application demande une clé d’activation.
 Saisir n’importe quelle valeur pour activer (stockée en local).
