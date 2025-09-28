@@ -1,6 +1,4 @@
-#📄 Scanner de Documents (Caméra → PDF) – MVP
-
-A new Flutter project.
+# 📄 Scanner de Documents (Caméra → PDF) – MVP
 
 ## Présentation
 Cette application mobile & web a été développée dans le cadre du test technique (Candidat 6).
