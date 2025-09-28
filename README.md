@@ -76,12 +76,17 @@ Une fois activée, l’utilisateur accède à la page principale.
 Lancer l’application → saisir la clé d’activation.
 
 Ajouter une ou plusieurs photos :
+
 Mobile → prise via caméra
+
 Web → import via galerie
+
 Réorganiser les pages si nécessaire.
 
 Générer le PDF :
+
 Mobile → fichier sauvegardé en local.
+
 Web → fichier téléchargé automatiquement.
 
 ## 🔒 Sécurité basique
@@ -91,10 +96,10 @@ Persistance de l’état activé via SharedPreferences.
 
 ## 🧑‍💻 Technologies utilisées
 
-Flutter 3.x
-Dart
-image_picker (images caméra/galerie)
-pdf (génération de PDF)
-path_provider (gestion fichiers mobile)
-universal_html (téléchargement web)
-shared_preferences (système d’activation)
+### Flutter 3.x
+### Dart
+### image_picker (images caméra/galerie)
+### pdf (génération de PDF)
+### path_provider (gestion fichiers mobile)
+### universal_html (téléchargement web)
+### shared_preferences (système d’activation)
