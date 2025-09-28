@@ -32,17 +32,21 @@ Protéger l’accès à l’application via une clé d’activation obligatoire
 
 lib/
 
- ├─ main.dart                # Point d’entrée
- 
- ├─ pages/
- 
- │   ├─ activation_page.dart # Page d’activation
- 
- │   └─ scanner_page.dart    # Page principale (scanner + PDF)
- 
- ├─ services/
- 
- │   └─ activation_service.dart # Service de gestion d’activation
+├─ main.dart                # Point d’entrée
+
+├─ pages/
+
+│  ├─ activation_page.dart  # Page d’activation
+
+│  └─ scanner_page.dart     # Page principale (scanner + PDF)
+├─ services/
+│  ├─ activation_service.dart # Service de gestion d’activation
+
+│  └─ pdf_generator.dart      # Génération PDF 
+
+├─ widgets/
+
+   └─ image_preview.dart      # Aperçu des images importées
  
 ## ⚙️ Installation 
 1. Cloner le dépôt
